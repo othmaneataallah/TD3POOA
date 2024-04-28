@@ -1,0 +1,68 @@
+public class Main {
+    public static void main(String[] args) {
+        MapChain<String, Integer> map = new MapChain<>();
+
+        System.out.println("Check initial size: " + map.size());
+        System.out.println("*Inserting values*");
+        map.add("a", 1);
+        map.add("b", 2);
+        map.add("c", 3);
+        map.add("d", 4);
+        map.add("e", 5);
+        map.add("f", 6);
+        map.add("g", 7);
+        map.add("h", 8);
+        map.add("i", 9);
+        map.add("j", 10);
+        map.add("k", 11);
+        map.add("l", 12);
+        map.add("m", 13);
+        map.add("n", 14);
+        map.add("o", 15);
+        map.add("p", 16);
+        map.add("q", 17);
+        map.add("r", 18);
+        map.add("s", 19);
+        map.add("t", 20);
+        map.add("u", 21);
+        map.add("v", 22);
+        map.add("w", 23);
+        map.add("x", 24);
+        map.add("y", 25);
+        map.add("z", 26);
+        System.out.println("Check final size: " + map.size());
+        System.out.println("Display values:");
+        System.out.println(map.search("a"));
+        System.out.println(map.search("b"));
+        System.out.println(map.search("c"));
+        System.out.println(map.search("d"));
+        System.out.println(map.search("e"));
+        System.out.println(map.search("f"));
+        System.out.println(map.search("g"));
+        System.out.println(map.search("h"));
+        System.out.println(map.search("i"));
+        System.out.println(map.search("j"));
+        System.out.println(map.search("k"));
+        System.out.println(map.search("l"));
+        System.out.println(map.search("m"));
+        System.out.println(map.search("n"));
+        System.out.println(map.search("o"));
+        System.out.println(map.search("p"));
+        System.out.println(map.search("q"));
+        System.out.println(map.search("r"));
+        System.out.println(map.search("s"));
+        System.out.println(map.search("t"));
+        System.out.println(map.search("u"));
+        System.out.println(map.search("v"));
+        System.out.println(map.search("w"));
+        System.out.println(map.search("x"));
+        System.out.println(map.search("y"));
+        System.out.println(map.search("z"));
+        map.update("a", 100);
+        System.out.println("Update value of 'a': " + map.search("a"));
+        System.out.println("Check if key 'a' exists: " + map.containsKey("a"));
+        System.out.println("*Removing 'a'*");
+        map.remove("a");
+        System.out.println("Check if 'a' exists: " + map.containsKey("a"));
+    }
+}
